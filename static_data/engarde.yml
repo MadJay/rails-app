@@ -1,0 +1,95 @@
+---
+birth_class:
+  - commoner
+  - gentleman
+  - nobleman
+sibling_rank:
+  - 1st Son
+  - 2nd Son
+  - 2nd Son
+  - 2nd Son
+  - Bastard
+  - Bastard
+fathers_position:
+  commoner:
+    - peasant:
+      initial_funds: 10
+      allowance: 0
+      inheritance: 0
+    - peasant:
+      initial_funds: 10
+      allowance: 0
+      inheritance: 0
+    - small merchant:
+      initial_funds: 25
+      allowance: 5
+      inheritance: 100
+    - merchant:
+      initial_funds: 150
+      allowance: 20
+      inheritance: 750
+    - wealthy merchant:
+      initial_funds: 250
+      allowance: 50
+      inheritance: 1500
+    - very wealthy merchant:
+      initial_funds: 500
+      allowance: 100
+      inheritance: 4000
+  gentleman:
+    - impoverished:
+      initial_funds: 40
+      allowance: 0
+      inheritance: 100
+    - impoverished:
+      initial_funds: 40
+      allowance: 0
+      inheritance: 100
+    - well-to-do:
+      initial_funds: 250
+      allowance: 50
+      inheritance: 1500
+    - well-to-do:
+      initial_funds: 250
+      allowance: 50
+      inheritance: 1500
+    - wealthy:
+      initial_funds: 500
+      allowance: 100
+      inheritance: 4000
+    - very wealthy:
+      initial_funds: 750
+      allowance: 125
+      inheritance: 5000
+  nobleman:
+    - impoverished:
+      initial_funds: 40
+      allowance: 0
+      inheritance: 100
+    - impoverished:
+      initial_funds: 40
+      allowance: 0
+      inheritance: 100
+    - well-to-do:
+      initial_funds: 250
+      allowance: 50
+      inheritance: 1500
+    - wealthy:
+      initial_funds: 500
+      allowance: 100
+      inheritance: 4000
+    - very wealthy:
+      initial_funds: 750
+      allowance: 125
+      inheritance: 5000
+    - very wealthy:
+      initial_funds: 750
+      allowance: 125
+      inheritance: 5000
+titles:
+  - knight
+  - baron
+  - marquis
+  - earl
+  - viscount
+  - count

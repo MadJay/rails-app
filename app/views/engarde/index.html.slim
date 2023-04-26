@@ -1,0 +1,15 @@
+div class="prose"
+  h2 Engarde New Character
+  div#flex
+    h3 #{@character.birth_rank} of a #{@character.position}
+    p Str: #{@character.str}
+    p Con: #{ @character.con}
+    p End: #{ @character.end}
+    p Exp: #{ @character.exp}
+    p MA: #{ @character.ma}
+    p SL: #{ @character.social_level}
+    div class="grid gap-4 grid-cols-3"
+     div Initial Funds: #{ @character.initial_funds}
+     div Allowance: #{ @character.allowance}
+     div  Inheritance: #{ @character.inheritance}
+    hr
