@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: rails_app_production
-  username: rails_app
-  password: <%= ENV["RAILS_APP_DATABASE_PASSWORD"] %>
+  database: rpgstash
+  username: madjay
+  password: 2m2d!Jay
