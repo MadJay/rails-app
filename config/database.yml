@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: rpgstash
-  username: madjay
+  database: playfearless
+  username: madjayzero
   password: 2m2d!Jay
