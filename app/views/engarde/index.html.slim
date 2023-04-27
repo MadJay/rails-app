@@ -1,15 +1,16 @@
 div class="prose"
   h2 Engarde New Character
-  div#flex
-    h3 #{@character.birth_rank} of a #{@character.position}
-    p Str: #{@character.str}
-    p Con: #{ @character.con}
-    p End: #{ @character.end}
-    p Exp: #{ @character.exp}
-    p MA: #{ @character.ma}
-    p SL: #{ @character.social_level}
-    div class="grid gap-4 grid-cols-3"
-     div Initial Funds: #{ @character.initial_funds}
-     div Allowance: #{ @character.allowance}
-     div  Inheritance: #{ @character.inheritance}
-    hr
+  div class="relative bg-blue-200 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10"
+    div#flex
+      h3 #{@character.birth_rank} of a #{@character.position.titleize}
+      div class="flex space-x-4"
+        div Str: #{@character.str}
+        div Con: #{ @character.con}
+        div End: #{ @character.end}
+        div Exp: #{ @character.exp}
+        div MA: #{ @character.ma}
+        div SL: #{ @character.social_level}
+      div class="grid gap-4 grid-cols-3"
+        div Initial Funds: #{ @character.initial_funds}
+        div Allowance: #{ @character.allowance}
+        div  Inheritance: #{ @character.inheritance}
