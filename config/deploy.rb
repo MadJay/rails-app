@@ -2,7 +2,7 @@
 lock "~> 3.17.2"
 
 set :application, "rpgstash"
-set :repo_url, "git@github.com:MadJay/playfearless-rails.git"
+set :repo_url, "git@github.com:MadJay/rpgstash.git"
 
 # Default branch is :master
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
