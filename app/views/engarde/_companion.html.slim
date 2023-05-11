@@ -1,0 +1,12 @@
+h2 Engarde New Companion
+div class="relative bg-green-200 px-6 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-4"
+  div#flex
+    div
+      h4 Social Level: #{ @companion.social_level}
+      - if @companion.has_wealth
+        p Is Wealthy
+      - if @companion.has_influence
+        p Is Influencial
+      - if @companion.has_beauty
+        p  Has Beauty
+br

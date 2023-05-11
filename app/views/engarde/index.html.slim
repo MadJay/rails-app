@@ -1,16 +1,9 @@
 div class="prose"
-  h2 Engarde New Character
-  div class="relative bg-blue-200 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10"
-    div#flex
-      h3 #{@character.birth_rank} of a #{@character.position.titleize}
-      div class="flex space-x-4"
-        div Str: #{@character.str}
-        div Con: #{ @character.con}
-        div End: #{ @character.end}
-        div Exp: #{ @character.exp}
-        div MA: #{ @character.ma}
-        div SL: #{ @character.social_level}
-      div class="grid gap-4 grid-cols-3"
-        div Initial Funds: #{ @character.initial_funds}
-        div Allowance: #{ @character.allowance}
-        div  Inheritance: #{ @character.inheritance}
+  h2 En Garde!
+  div  class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+    img  class="rounded-t-lg"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Map_of_Paris_by_Claes_Jansz._Visscher_-_Harold_B._Lee_Library.jpg/1280px-Map_of_Paris_by_Claes_Jansz._Visscher_-_Harold_B._Lee_Library.jpg"
+  div class="p-6"
+    h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50"  A  PlayByPost is Dead resource.
+    p class="mb-4 text-base text-neutral-600 dark:text-neutral-200"
+    = link_to  'New Character', engarde_path(:character), class:"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-2 rounded-full"
+    = link_to  'New Companion', engarde_path(:companion), class:"bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"

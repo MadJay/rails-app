@@ -1,8 +1,16 @@
 class EngardeController < ApplicationController
 
   def index
-    @character = RandomEngardeCharacter.new.call
-    logger.info "character: #{@character.inspect}"
   end
+
+  def show
+    case params[:id]
+    when 'character'
+      @character = RandomEngardeCharacter.new.call
+    when 'companion'
+      @companion = RandomEngardeCompanion.new.call
+    end
+  end
+
 end
 
