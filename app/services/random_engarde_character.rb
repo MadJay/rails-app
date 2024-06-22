@@ -22,7 +22,7 @@ attr_reader :tables, :character
   @character.allowance += @character.allowance * 0.10
   @character.social_level += 1
   if d6(1) == 1
-    @character.sibling_rank = 'orphan'
+  #  @character.sibling_rank = 'orphan' error!!
     @character.allowance = @character.initial_funds = 0
     if @character.birth_class == @tables[:birth_class][5]
       @character.social_level += 3

@@ -1,0 +1,2 @@
+module MiseriesMisfortunesHelper
+end

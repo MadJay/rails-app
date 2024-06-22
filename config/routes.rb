@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
 root "engarde#index"
 resources :engarde
+resources :miseries_misfortunes
 end

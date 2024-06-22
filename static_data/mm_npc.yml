@@ -1,0 +1,186 @@
+---
+birth_quality:
+  - class: Marginaux
+    index: 5
+    obligations: 2
+    text: Actor, prostitute, urchin, soldier, filou, sailor
+    income_source:
+      - 3: None
+      - 4: Labor
+      - 6: Sale Boulot
+  - class: Peasant
+    index: 10
+    obligations: 3
+    text: Laborer, villein, farmer
+    income_source:
+      - 1: None
+      - 4: Labor
+      - 6: Produce
+  - class: Commoner
+    index: 13
+    text: Printer, fish monger, passeur
+    income_source:
+      - 4: Labor
+      - 6: Business
+    obligations: 2
+  - class: Artisan
+    index: 14
+    text: Smith, carpenter, clothier, mason, plumber, clock maker
+    income_source:
+      - 3: Labor
+      - 6: Business
+    obligations: 2
+  - class: Bourgeoisie
+    index: 15
+    text: Merchant, financier, architect, famous artist
+    income_source:
+      - 1: Auction
+      - 4: Business
+      - 5: Logeur
+      - 6: Usury and Zinskauf
+    obligations: 2
+  - class: "Noblesse d’épée sans titre"
+    index: 15
+    text: "Écuyer, chevalier, dame, gentilhomme"
+    income_source:
+      - 4: None
+      - 5: Charge
+      - 6: Benefice
+    obligations: 1
+  - class: Noblesse de robe
+    index: 17
+    text: Minister, judge, intendant
+    income_source:
+      - 4: None
+      - 5: Logeur
+      - 6: Benefice
+    obligations: 2
+  - class: Noblesse d’épée avec titre
+    index: 18
+    text: Sieur, seigneur, baron, vicomte, comte, marquis
+    income_source:
+      - 1: None
+      - 2: Charge
+      - 3: Logeur
+      - 5: Benefice
+      - 6: Taxation
+    obligations: 0
+income_range:
+  None:
+    range: 0
+    property: [4: Homeless, 5: Rented Flat, 6: Country Home]
+  Labor:
+    range: '1d3'
+    property: [1: Homeless, 5: Rented Flat, 6: Country Home]
+  Sale Boulot:
+    range: '1d4'
+    property: [4: Homeless, 5: Rented Flat, 6: City Home]
+  Produce:
+    range: '1d6'
+    property: [5: Country Home, 6: Manor]
+  Business:
+    range: '1d6'
+    property: [1: Rented Flat, 5: City Home, 6: Townhouse]
+  Auction:
+    range: '1d6'
+    property: [2: Country home, 5: City Home, 6: Townhouse]
+  Logeur:
+    range: '1d8'
+    property: [1: Manor, 5: Townhouse, 6: Estate]
+  Benefice:
+    range: '1d6+1'
+    property: [1: None, 5: Country Home, 6: Abby (Estate)]
+  Charge:
+    range: '1d6+1'
+    property: [4: Country Home, 5: City Home, 6: Fortress]
+  Droit Annuel:
+    range: '1d4+1'
+    property: [5: City Home, 6: Villa]
+  Taxation:
+    range: '2d4+1'
+    property: [1: Villa, 3: Manor, 4: Estate, 5: Village, 6: Castle]
+  Usury and Zinskauf:
+    range: '2d6'
+    property: [3: Townhouse, 5: Manor, 6: Estate]
+property:  #Obl IncomMod Asset Vakl
+  Homeless: [0,-1, 0]
+  Rented Flat: [1, 0, 0 ]
+  Country Home: [1,1,'1d3']
+  City Home: [2,1,'1d4']
+  Manor: [3,2,'1d6']
+  Townhouse: [3,2,'1d6+1']
+  Villa: [5,3,'1d8']
+  Estate: [6,4,'1d8']
+  Village: [8,4,'1d8']
+  Castle: [9,4,'1d10']
+  Fortress: [10,2,'1d10']
+wealth_rank: #Income Total Wealth Rating Income in Livres Social Strata
+  14: ['99/100', '₶ 1,000,000,000s', 'VOC']
+  13: ['99/100', '₶ 1,000,000,000s', 'VOC']
+  12: ['98/100', '₶100,000,000s','The state']
+  11: ['97/100', "₶50,000,000s", "M. Le Cardinal"]
+  10: ['96/100', '₶ 10,000,000s', 'Ministers of State']
+  9: ['19/20', '₶ 5,000,000s', 'Financiers']
+  8: ['11/12', '₶1,000,000s', 'Princes & Dukes']
+  7: [ '9/10', '₶ 100,000s', 'Merchants']
+  6: [' 7/8', '₶10,000s',' Marquis & Barons']
+  5: ['5/6', '₶1000s','Artisans']
+  4: [' 4/6',  '₶ 500s', 'Tradesmen']
+  3: ['3/6', '₶200s', 'Peasants']
+  2: ['2/6', '₶100s', 'Laborers']
+  1: ['1/6', '₶10s', 'Beggars']
+  0: ['0',  '₶ 0', 'Hermit']
+dependents:
+  1: Child
+  11: Elder sister
+  2: Younger cousin
+  12: Impecunious lover
+  3: Nephew
+  13: Infirm father
+  4: Niece
+  14: Dying mentor
+  5: Younger sister
+  15: Infirm mother
+  6: Younger brother
+  16: Widower infirm uncle
+  7: Sickly childhood friend
+  17: Widowed infirm aunt
+  8: Spouse
+  18: Infirm grandfather
+  9: Older cousin
+  19: Infirm grandmother
+  10: Elder brother
+  20: Drunk uncle or aunt
+relation:
+  - 3: Blood
+  - 5: In-law
+  - 6: Filial or adopted
+debt:
+  - 1: You are owed money (value= 2d3 Wealth)
+  - 2: You have a sizable debt (+3 Obligations)
+  - 3: You are in debt (+2 Obl)
+  - 4: You owe a small debt (+1 Obl)
+  - 6: You are debt free
+religion:
+  - 3: Lutheran
+  - 7: Catholic
+  - 11: Huguenot
+  - 12: Jewish
+politics:
+  - 2: Cardinalist
+  - 4: Noble
+  - 7: Royalist
+  - 10: Frondeur
+  - 11: Hapsburg
+  - 12: Politically ignorant
+score_mod:
+  - 2: u
+  - 3: -3
+  - 5: -2
+  - 8: -1
+  - 12: 0
+  - 15: +1
+  - 17: +2
+  - 18: +3
+  - 19: +4
+abilities: [ Str, Int, Wis, Dex, Con, Cha]
