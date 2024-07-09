@@ -20,5 +20,7 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+* cap production deploy
+www.rpgstash.madjayzero.com
 
 * ...
